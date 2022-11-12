@@ -162,7 +162,8 @@ body {
     /* align-items: center; */
 }
 
-.icon:hover {
+.icon:hover,
+.icon:focus {
     fill: var(--accent-color);
 }
 
@@ -349,7 +350,8 @@ body {
     color: var(--icon-color);
 }
 
-.link-icon:hover {
+.link-icon:hover,
+.link-icon:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
     color: var(--contrast-text-color);
@@ -366,14 +368,16 @@ body {
     margin-left: 10px;
 }
 
-.client-item {
+/* Постійні клієнти */
+
+.link-client {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
     height: 92px;
     color: var(--icon-color);
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 4px;
 }
 
@@ -381,7 +385,8 @@ body {
     margin-left: 30px;
 }
 
-.client-item:hover {
+.link-client:hover,
+.link-client:focus {
     color: var(--accent-color);
 }
 
@@ -472,7 +477,8 @@ body {
     border-radius: 50%;
 }
 
-.link-icon:hover {
+.join .link-icon:hover,
+.join .link-icon:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
     color: var(--contrast-text-color);
@@ -564,7 +570,8 @@ body {
     text-decoration: none;
 }
 
-.projects-item:hover {
+.projects-item:hover,
+.projects-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
