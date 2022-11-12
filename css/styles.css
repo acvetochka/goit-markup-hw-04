@@ -3,6 +3,7 @@
     --secondary-text-color: #757575;
     --contrast-text-color: #ffffff;
     --address-item-color: rgba(255, 255, 255, 0.6);
+    --icon-color: #AFB1B8;
 
     --accent-color: #2196F3;
     --button-accent: #188CE8;
@@ -41,7 +42,6 @@ body {
         noto,
         arial,
         sans-serif;
-
 }
 
 .line {
@@ -98,6 +98,10 @@ body {
     padding-left: 0;
 }
 
+.nav-item {
+    display: flex;
+}
+
 .list .nav-item + .nav-item{
     margin-left: 50px;
 }
@@ -124,6 +128,7 @@ body {
 .contact-item:hover,
 .contact-item:focus {
     color: var(--accent-color);
+
 }
 
 .contacts-head {
@@ -132,12 +137,28 @@ body {
 }
 
 .contact-item {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
     color: var(--secondary-text-color);
     letter-spacing: 0.02em;
+    align-items: center;
+ 
+}
+
+.icon {
+    fill: currentColor;
+    /* fill:#757575; */
+    margin-right: 10px;
+    padding: 0;
+    margin-bottom: 0;
+    /* align-items: center; */
+}
+
+.icon:hover {
+    fill: var(--accent-color);
 }
 
 /* Стилі index.html */
@@ -184,6 +205,29 @@ body {
 .list .benefits-item + .benefits-item {
     margin-left: 30px;
 }
+
+.benefits-item {
+    width: 270px;
+    padding: 0;
+}
+
+.benefits-icons {
+    display: flex;
+    background-color: var(--content-background);
+    width: 270px;
+    height: 120px;
+    /* margin-right: 0; */
+    margin-bottom: 30px;
+}
+
+.icon-benefits {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 70px;
+    height: 70px;
+}
+
 .benefits-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -241,6 +285,7 @@ body {
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .list .team-item + .team-item {
@@ -262,10 +307,72 @@ body {
 
 .team-direct {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.team-icons {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    list-style: none;
+}
+
+
+.link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    color: var(--icon-color);
+}
+
+.link-icon:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--contrast-text-color);
+}
+
+.icon-team {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    fill: currentColor;
+}
+
+.team-icons .list-icon + .list-icon {
+    margin-left: 10px;
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: var(--icon-color);
+    border: 1px solid ;
+    border-radius: 4px;
+}
+
+.container .client-item+.client-item {
+    margin-left: 30px;
+}
+
+.client-item:hover {
+    color: var(--accent-color);
+}
+
+.icon-client {
+    fill: currentColor;
+
 }
 
 /* Footer */
@@ -277,8 +384,16 @@ body {
 }
 
 .contacts .container {
+    justify-content: start;
+    align-items: baseline;
+}
+
+.address-container {
+    display: flex;
     flex-direction: column;
     align-items: start;
+    margin-right: 70px;
+    margin-left: 0;
 }
 .logo-footer,
 .logo-footer:visited {
@@ -314,6 +429,45 @@ body {
 .address-item:hover,
 .address-item:focus {
     color: var(--accent-color);
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 100px; */
+}
+
+.join-p {
+    text-transform: uppercase;
+    color: var(--contrast-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+.join .team-icons {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.join .link-icon {
+    color: var(--contrast-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.link-icon:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--contrast-text-color);
+}
+
+.icon-team {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    fill: currentColor;
 }
 
 /* Стилі portfolio.html */
